@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jsonlogindemo.RegistrationFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+       android:orientation="vertical"
+       android:padding="10dp">
+       <EditText
+           android:id="@+id/etUsername"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter the Username"
+           android:layout_marginBottom="8dp"
+           android:layout_marginTop="8dp"
+           android:inputType="text"
+           />
+       <EditText
+           android:id="@+id/etEmail"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter the Email"
+           android:layout_marginTop="8dp"
+           android:layout_marginBottom="8dp"
+           android:inputType="textEmailAddress"/>
+       <EditText
+           android:id="@+id/etPassword"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter the Password"
+           android:layout_marginBottom="8dp"
+           android:layout_marginTop="8dp"
+           android:fontFamily="sans-serif"
+           android:inputType="textPassword"/>
+
+       <RadioGroup
+           android:id="@+id/radioGender"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="8dp"
+           android:layout_marginBottom="8dp"
+           android:orientation="horizontal">
+           
+           <RadioButton
+               android:id="@+id/radioButtonMale"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:checked="true"
+               android:text="Male"/>
+           <RadioButton
+               android:id="@+id/radioButtonFemale"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Female"/>
+
+
+       </RadioGroup>
+
+
+       <Button
+           android:id="@+id/btnRegister"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Register"
+           android:layout_marginBottom="8dp"
+           android:layout_marginTop="8dp"
+           android:textAllCaps="false"
+           />
+
+       <TextView
+           android:id="@+id/tvLogin"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="8dp"
+           android:layout_marginBottom="8dp"
+           android:text="Already Register?\nLogin Here"
+           android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+           android:textAlignment="center"/>
+
+   </LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/pg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
